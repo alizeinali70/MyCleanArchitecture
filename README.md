@@ -65,9 +65,7 @@ Swagger/OpenAPI: The WebApi project includes Swagger/OpenAPI, which provides a U
 Project structure: The project structure is a good starting point, but you can adjust it to fit the specific needs of your application.
 Security: The code doesn't implement any security measures. For production applications, you should add authentication and authorization
 
-
-# Example usage:
-structure_text = """
+## Project Structure
 MyCleanArchitecture.sln
 ├── Core/
 │   ├── Entities/
