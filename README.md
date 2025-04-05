@@ -64,3 +64,35 @@ Swagger/OpenAPI: The WebApi project includes Swagger/OpenAPI, which provides a U
 
 Project structure: The project structure is a good starting point, but you can adjust it to fit the specific needs of your application.
 Security: The code doesn't implement any security measures. For production applications, you should add authentication and authorization
+
+
+# Example usage:
+structure_text = """
+MyCleanArchitecture.sln
+├── Core/
+│   ├── Entities/
+│   │   └── Product.cs
+│   ├── UseCases/
+│   │   ├── CreateProduct/
+│   │   │   ├── CreateProductRequest.cs
+│   │   │   ├── CreateProductResponse.cs
+│   │   │   ├── ICreateProductUseCase.cs
+│   │   │   └── CreateProductUseCase.cs
+│   │   ├── GetProducts/
+│   │   │   ├── GetProductsResponse.cs
+│   │   │   ├── IGetProductsUseCase.cs
+│   │   │   └── GetProductsUseCase.cs
+│   │   └── Repositories/
+│   │       └── IProductRepository.cs
+├── Infrastructure/
+│   ├── Data/
+│   │   ├── AppDbContext.cs
+│   │   └── SqlProductRepository.cs
+├── WebApi/
+│   ├── Controllers/
+│   │   └── ProductsController.cs
+│   ├── Models/
+│   │   └── ProductDto.cs
+│   ├── Program.cs
+│   └── Startup.cs
+└── MyCleanArchitecture.sln
